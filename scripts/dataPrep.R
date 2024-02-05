@@ -6,7 +6,7 @@ library(tidyverse)
 
 chns <- read.csv("./data/CHNS.csv", header=T)
 
-decomp <- read.csv("./data/decomp_final.csv", header = T) %>%
+decomp <- read.csv("./data/decomp_12.3.20.csv", header = TRUE) %>%
   mutate(
     Site = as.factor(Site),
     Batch = as.factor(Batch),
